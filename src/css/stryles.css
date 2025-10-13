@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 body {
@@ -12,7 +13,7 @@ header {
 
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+   
     /* position: fixed;
     top: 0;
     left: 0;
@@ -44,8 +45,9 @@ header {
 
 /*----------------------------------------------------------------------------------------------*/
 .botones-header button {
-    border: 1px solid black;
+    border: black   1px solid;
     color: black;
+    background-color: white;
 
     padding: 10px 20px;
 
@@ -55,7 +57,7 @@ header {
 }
 
 .botones-header button:hover {
-    background-color: #073a5d;
+    background-color: #948a8a;
 }
 
 /*--------------------------------------------------------------------------------*/
@@ -85,3 +87,46 @@ header {
     text-shadow: 0 2px 8px rgba(0,0,0,0.6); /* mejora la legibilidad */
     font-size:xx-large;
   }
+
+.redes-section {
+
+    background-color: #948a8a;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    color: aliceblue    ;
+}
+
+.redes-texto {
+
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-redes {
+
+    height:50px;
+    cursor: pointer;
+}
+
+.redes-iconos{
+
+    width: 50%;
+    display: flex;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------------------------------------------------------------------------*/
+.nav-conocenos {
+
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
