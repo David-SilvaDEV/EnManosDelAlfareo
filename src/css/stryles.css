@@ -139,6 +139,7 @@
     flex-direction: column;
     text-align: center;
     padding: 20px;
+    gap:20px;
   }
   
   .banner2-texto {
@@ -152,6 +153,12 @@
     font-size: 3vw;
     padding: 0 10px;
   }
+
+  .imagen-biblia{
+    height:40px;
+}
+
+  
   
   /* ----------------------------- RESPONSIVE DESIGN ----------------------------- */
   
@@ -192,7 +199,7 @@
   
     .banner-texto,
     .banner2-texto {
-      font-size: 5vw;
+      font-size: 4vw;
     }
   
     .redes-texto,
@@ -205,6 +212,27 @@
       gap: 10px;
       padding: 15px 0;
     }
+    .imagen-biblia{
+        height:20px;
+    }
+    
+    .banner button {
+
+        height:20px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        
+        
+    }
+
+    .banner2-texto {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
   }
   
   /* Celulares pequeños (hasta 480px) */
@@ -215,7 +243,7 @@
   
     .banner-texto,
     .banner2-texto {
-      font-size: 6vw;
+      font-size: 4vw;
     }
   
     .botones-header button {
@@ -226,5 +254,29 @@
     .logo-redes {
       height: 40px;
     }
+
+    .imagen-biblia{
+        height:20px;
+    }
+
+    .banner button {
+
+        height:20px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        
+        
+    }
+
+    .banner2-texto {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+
+    
   }
   
