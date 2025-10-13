@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* padding-top: 100px; */
+}
+
+header {
+
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; */
+}
+
+.logo-header {
+
+
+    width: 50%;
+    display: grid;
+
+}
+
+.logo {
+
+    height: 100px;
+
+}
+
+.botones-header {
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    width: 45%;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+.botones-header button {
+    border: 1px solid black;
+    color: black;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.botones-header button:hover {
+    background-color: #073a5d;
+}
+
+/*--------------------------------------------------------------------------------*/
+.banner {
+    position: relative;
+    /* necesario para colocar texto encima */
+    width: 100%;
+    display: block;
+}
+
+.img-banner {
+
+    width: 100%;
+    
+    height: auto;
+    display: block;
+
+}
+
+.banner-texto {
+    position: absolute;  /* coloca el texto sobre la imagen */
+    top: 50%;            /* centro vertical */
+    left: 50%;           /* centro horizontal */
+    transform: translate(-50%, -50%); /* lo centra perfectamente */
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6); /* mejora la legibilidad */
+    font-size:xx-large;
+  }
