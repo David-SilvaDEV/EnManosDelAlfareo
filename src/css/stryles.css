@@ -1,282 +1,277 @@
 /* ----------------------------- RESET Y BASE ----------------------------- */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Bebas Neue", sans-serif;
-  }
-  
-  body {
-    width: 100%;
-    overflow-x: hidden;
-    background-color: #fff;
-  }
-  
-  /* ----------------------------- HEADER ----------------------------- */
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10px 20px;
-    gap: 10px;
-  }
-  
-  .logo-header {
-    width: 45%;
-    display: grid;
-    place-items:initial;
-  }
-  
-  .logo {
-    height: 100px;
-    max-width: 100%;
-  }
-  
-  .botones-header {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 20px;
-    width: 45%;
-    flex-wrap: wrap;
-  }
-  
-  /* Botones del header */
-  .botones-header button {
-    border: 1px solid black;
-    color: black;
-    background-color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: 0.3s;
-  }
-  
-  .botones-header button:hover {
-    background-color: #948a8a;
-  }
-  
-  /* ----------------------------- BANNER ----------------------------- */
-  .banner {
-    position: relative;
-    width: 100%;
-    display: block;
-  }
-  
-  .img-banner {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .banner-texto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-    font-size: 3vw; /* se adapta al ancho de pantalla */
-    padding: 0 10px;
-  }
-  
-  .banner button {
-    border: 1px solid black;
-    color: black;
-    background-color: transparent;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: 0.3s;
-  }
-  
-  .banner button:hover {
-    background-color: #948a8a;
-  }
-  
-  /* ----------------------------- REDES ----------------------------- */
-  .redes-section {
-    background-color: #948a8a;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    color: aliceblue;
-    padding: 10px 0;
-  }
-  
-  .redes-texto {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .logo-redes {
-    height: 50px;
-    cursor: pointer;
-  }
-  
-  .redes-iconos {
-    width: 50%;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  /* ----------------------------- SECCIÓN CONÓCENOS ----------------------------- */
-  .nav-conocenos {
-    min-height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    gap:20px;
-  }
-  
-  .banner2-texto {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-    font-size: 3vw;
-    padding: 0 10px;
-  }
-
-  .imagen-biblia{
-    height:40px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", sans-serif;
 }
 
-  
-  
-  /* ----------------------------- RESPONSIVE DESIGN ----------------------------- */
-  
-  /* Tablets (hasta 1024px) */
-  @media (max-width: 1024px) {
-    .logo-header,
-    .botones-header {
-      width: 100%;
-      justify-content: center;
-    }
-  
-    .botones-header button {
-      padding: 8px 16px;
-      font-size: 0.9rem;
-    }
-  
-    .banner-texto,
-    .banner2-texto {
-      font-size: 4vw;
-    }
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+/* ----------------------------- HEADER ----------------------------- */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  gap: 10px;
+}
+
+.logo-header {
+  width: 45%;
+  display: grid;
+  place-items: initial;
+}
+
+.logo {
+  height: 100px;
+  max-width: 100%;
+}
+
+.botones-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  width: 45%;
+  flex-wrap: wrap;
+}
+
+/* Botones del header */
+.botones-header button {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.botones-header button:hover {
+  background-color: #948a8a;
+}
+
+/* ----------------------------- BANNER ----------------------------- */
+.banner {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.img-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  font-size: 3vw;
+  /* se adapta al ancho de pantalla */
+  padding: 0 10px;
+}
+
+.banner button {
+  border: 1px solid black;
+  color: black;
+  background-color: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.banner button:hover {
+  background-color: #948a8a;
+}
+
+/* ----------------------------- REDES ----------------------------- */
+.redes-section {
+  background-color: #948a8a;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  padding: 10px 0;
+}
+
+.redes-texto {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-redes {
+  height: 50px;
+  cursor: pointer;
+}
+
+.redes-iconos {
+  width: 50%;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ----------------------------- SECCIÓN CONÓCENOS ----------------------------- */
+.nav-conocenos {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.banner2-texto {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  font-size: 3vw;
+  padding: 0 10px;
+}
+
+.imagen-biblia {
+  height: 40px;
+}
+
+
+
+/* ----------------------------- RESPONSIVE DESIGN ----------------------------- */
+
+/* Tablets (hasta 1024px) */
+@media (max-width: 1024px) {
+
+  .logo-header,
+  .botones-header {
+    width: 100%;
+    justify-content: center;
   }
-  
-  /* Celulares grandes (hasta 768px) */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .logo {
-      height: 80px;
-    }
-  
-    .botones-header {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .banner-texto,
-    .banner2-texto {
-      font-size: 4vw;
-    }
-  
-    .redes-texto,
-    .redes-iconos {
-      width: 100%;
-    }
-  
-    .redes-section {
-      flex-direction: column;
-      gap: 10px;
-      padding: 15px 0;
-    }
-    .imagen-biblia{
-        height:20px;
-    }
-    
-    .banner button {
 
-        height:20px;
-        font-size: 12px;
-        display: flex;
-        align-items: center;
-        
-        
-    }
-
-    .banner2-texto {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-   
+  .botones-header button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
-  
-  /* Celulares pequeños (hasta 480px) */
-  @media (max-width: 480px) {
-    .logo {
-      height: 70px;
-    }
-  
-    .banner-texto,
-    .banner2-texto {
-      font-size: 4vw;
-    }
-  
-    .botones-header button {
-      width: 80%;
-      font-size: 0.9rem;
-    }
-  
-    .logo-redes {
-      height: 40px;
-    }
 
-    .imagen-biblia{
-        height:20px;
-    }
-
-    .banner button {
-
-        height:20px;
-        font-size: 12px;
-        display: flex;
-        align-items: center;
-        
-        
-    }
-
-    .banner2-texto {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-   
-
-    
+  .banner-texto,
+  .banner2-texto {
+    font-size: 4vw;
   }
-  
+}
+
+/* Celulares grandes (hasta 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .botones-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner-texto,
+  .banner2-texto {
+    font-size: 4vw;
+  }
+
+  .redes-texto,
+  .redes-iconos {
+    width: 100%;
+  }
+
+  .redes-section {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 0;
+  }
+
+  .imagen-biblia {
+    height: 20px;
+  }
+
+
+
+}
+
+/* Celulares pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  .logo {
+    height: 70px;
+  }
+
+  .banner-texto,
+  .banner2-texto {
+    font-size: 4vw;
+  }
+
+  .botones-header button {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+
+  .logo-redes {
+    height: 40px;
+  }
+
+  .imagen-biblia {
+    height: 20px;
+  }
+
+  .banner button {
+
+    height: 30px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #948a8a;
+
+
+  }
+
+  .banner2-texto {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .img-banner {
+    width: 800px;
+    height: auto;
+    display: block;
+  }
+
+
+
+}
