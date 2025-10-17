@@ -170,6 +170,7 @@ header {
   .botones-header {
     width: 100%;
     justify-content: center;
+   
   }
 
   .botones-header button {
@@ -177,10 +178,16 @@ header {
     font-size: 0.9rem;
   }
 
-  .banner-texto,
-  .banner2-texto {
+  .banner-texto
+  {
     font-size: 4vw;
   }
+  
+  .banner2-texto h1
+  {
+    font-size: 4vw;
+  }
+
 }
 
 /* Celulares grandes (hasta 768px) */
@@ -266,11 +273,12 @@ header {
     gap: 20px;
   }
 
-  .img-banner {
-    width: 800px;
-    height: auto;
-    display: block;
-  }
+.img-banner {
+  width: 100%; /* Se ajusta al 100% del contenedor */
+  height: 300px; /* Establece una altura fija para que la imagen tenga un tamaño adecuado */
+  object-fit: cover; /* Recorta la imagen para cubrir todo el espacio */
+  display: block;
+}
 
 
 
