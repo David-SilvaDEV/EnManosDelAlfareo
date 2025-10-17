@@ -19,7 +19,7 @@
 
     <div class="botones-header">
       <button>Oración</button>
-      <button>Donaciones</button>
+      <button class="donaciones" >Donaciones</button>
     </div>
 
     <!-- Menú hamburguesa -->
@@ -32,14 +32,14 @@
           <ul class="ul-hambuerguesa">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Oración</a></li>
-            <li><a href="#">Donaciones</a></li>
+            <li><a class="donaciones"  href="#">Donaciones</a></li>
           </ul>
         </nav>
       </div>
     </section>
 
   </header>
-  </header>
+ 
   <main>
     <section class="banner">
       <img src="./src/img/Banner.png" alt="banner" class="img-banner">
@@ -67,11 +67,21 @@
 
       <div class="banner2-texto">
         <h1>Tu donación hará que cambiemos el mundo a través del evangelio. </h1>
-        <button>Donar</button>
+        <button class="donaciones" >Donar</button>
       </div>
     </section>
 
   </main>
+
+   <!-- Modal o card superpuesta -->
+  <div id="overlay" class="overlay oculto">
+    <div class="card">
+      <h2>En Manos del Alfarero</h2>
+      <img class="img-qr" src="./src/img/Código de prueba en QR.png" alt="">
+      <p>Tu semilla es muy importante para llevar la palabra del evangelio al mundo. </p>
+      <button id="cerrar" class="cerrar">Cerrar</button>
+    </div>
+  </div>
 
   <script type="module" src="./src/js/main.js"></script>
 </body>

@@ -14,3 +14,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+// Selecciona TODOS los elementos con la clase .donaciones
+const donaciones = document.querySelectorAll('.donaciones');
+const cerrar = document.querySelector('#cerrar');
+const overlay = document.querySelector('#overlay');
+
+// Recorre cada botón/enlace de donaciones
+donaciones.forEach(boton => {
+  boton.addEventListener('click', (e) => {
+    e.preventDefault(); // evita saltar al inicio por el href="#"
+    overlay.classList.remove('oculto');
+  });
+});
+
+cerrar.addEventListener('click', () => overlay.classList.add('oculto'));

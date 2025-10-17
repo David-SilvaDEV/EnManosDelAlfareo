@@ -229,6 +229,48 @@ header {
   /* Mostrar el menú cuando tiene la clase 'active' */
 }
 
+/*----------------------------------------CARD OCULTA QR PAGO-------------------------------------------*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.oculto {
+  display: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  gap: 40px;
+}
+
+.img-qr{
+
+  height: 200px;
+}
+
+.cerrar {
+  padding: 5%;
+  cursor: pointer;
+
+}
+
+
 /* ----------------------------- RESPONSIVE DESIGN ----------------------------- */
 
 /* Tablets (hasta 1024px) */
