@@ -161,6 +161,68 @@ header {
 
 
 
+/* ----------------------------- MENÚ HAMBURGUESA ----------------------------- */
+.div-icon {
+ display: none;
+  /* Ocultar el icono hamburguesa por defecto */
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 1000;
+  /* Asegurar que esté por encima de otros elementos */
+}
+
+.material-symbols-outlined {
+  font-size: 30px;
+  color: black;
+  
+}
+
+.section-hambuerguesa{
+  display: none;
+}
+
+.ul-hambuerguesa {
+  list-style-type: none;
+  gap: 1rem;
+  display: none;
+  /* Ocultar el menú por defecto */
+  padding: 20px;
+  background-color: #e4e4de;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  /* Asegurarse de que esté debajo del icono */
+  overflow-y: auto;
+}
+
+
+
+.ul-hambuerguesa li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 15px;
+  display: block;
+}
+
+/* Mostrar menú hamburguesa al hacer clic */
+.ul-hambuerguesa.active {
+  display: flex;
+  
+  /* Mostrar el menú cuando tiene la clase 'active' */
+}
+
 /* ----------------------------- RESPONSIVE DESIGN ----------------------------- */
 
 /* Tablets (hasta 1024px) */
@@ -168,9 +230,9 @@ header {
 
   .logo-header,
   .botones-header {
-    width: 100%;
+
     justify-content: center;
-   
+
   }
 
   .botones-header button {
@@ -178,32 +240,37 @@ header {
     font-size: 0.9rem;
   }
 
-  .banner-texto
-  {
+  .banner-texto {
     font-size: 4vw;
   }
-  
-  .banner2-texto h1
-  {
+
+  .banner2-texto h1 {
     font-size: 4vw;
   }
+
+
 
 }
 
 /* Celulares grandes (hasta 768px) */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    text-align: center;
+    display: flex;
+
   }
 
   .logo {
     height: 80px;
   }
 
-  .botones-header {
-    flex-direction: column;
-    gap: 10px;
+  .logo-header {
+    display: flex;
+    justify-content: start;
+    width: 40%;
+  }
+
+  .logo-header img {
+    height: 40px;
   }
 
   .banner-texto,
@@ -226,9 +293,37 @@ header {
     height: 20px;
   }
 
+  .ul-hambuerguesa {
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#cec9c9;
+    height: 40%;
 
+  }
+
+  .div-icon {
+    display: block;
+  }
+
+  .botones-header button {
+
+    display: none;
+
+  }
+
+  .section-hambuerguesa{
+
+    display: block;
+  }
 
 }
+
+
+
+
+
 
 /* Celulares pequeños (hasta 480px) */
 @media (max-width: 480px) {
@@ -273,12 +368,15 @@ header {
     gap: 20px;
   }
 
-.img-banner {
-  width: 100%; /* Se ajusta al 100% del contenedor */
-  height: 300px; /* Establece una altura fija para que la imagen tenga un tamaño adecuado */
-  object-fit: cover; /* Recorta la imagen para cubrir todo el espacio */
-  display: block;
-}
+  .img-banner {
+    width: 100%;
+    /* Se ajusta al 100% del contenedor */
+    height: 300px;
+    /* Establece una altura fija para que la imagen tenga un tamaño adecuado */
+    object-fit: cover;
+    /* Recorta la imagen para cubrir todo el espacio */
+    display: block;
+  }
 
 
 

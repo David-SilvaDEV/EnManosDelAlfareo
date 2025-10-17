@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="./src/css/stryles.css">
   <link rel="stylesheet" href="./src/css/fuentes.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alfarero Proyect</title>
 </head>
@@ -14,10 +16,29 @@
     <div class="logo-header">
       <img src="./src/img/logo.jpg" alt="logo" class="logo">
     </div>
+
     <div class="botones-header">
-      <button>oracion</button>
+      <button>Oración</button>
       <button>Donaciones</button>
     </div>
+
+    <!-- Menú hamburguesa -->
+    <section class="section-hambuerguesa">
+      <div class="div-icon">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+      <div>
+        <nav class="menu-hamburguesa" id="menu-hamburguesa">
+          <ul class="ul-hambuerguesa">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Oración</a></li>
+            <li><a href="#">Donaciones</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+  </header>
   </header>
   <main>
     <section class="banner">
@@ -52,7 +73,7 @@
 
   </main>
 
-
+  <script type="module" src="./src/js/main.js"></script>
 </body>
 
 </html>
