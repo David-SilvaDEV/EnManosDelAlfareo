@@ -20,6 +20,12 @@ header {
   flex-wrap: wrap;
   padding: 10px 20px;
   gap: 10px;
+  position: fixed;  /* Fija el encabezado en la parte superior */
+  top: 0;           /* Asegura que esté en la parte superior */
+  left: 0;          /* Alinea el encabezado a la izquierda */
+  width: 100%;      /* Asegura que el encabezado ocupe todo el ancho */
+  z-index: 1000;    /* Asegura que el encabezado esté por encima de otros elementos */
+  background-color: white;
 }
 
 .logo-header {
