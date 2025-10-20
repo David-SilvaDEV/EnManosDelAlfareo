@@ -9,17 +9,52 @@
 </head>
 
 <body>
-  <form action="https://formsubmit.co/orpi4488@gmail.com" method="POST">
-    <h2>Contáctame 💌</h2>
+  <header>
+    <div class="logo-header">
+      <img src="../img/logo.jpg" alt="logo" class="logo">
+    </div>
 
-    <label for="nombre">Tu nombre:</label>
-    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+    <div class="botones-header">
+      <a href="/index.html"><button>Inicio</button></a>
+      <button class="donaciones">Donaciones</button>
+    </div>
 
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+    <!-- Menú hamburguesa -->
+    <section class="section-hambuerguesa">
+      <div class="div-icon">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+      <div>
+        <nav class="menu-hamburguesa" id="menu-hamburguesa">
+          <ul class="ul-hambuerguesa">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="./src/vistas/oraciones.html">Oración</a></li>
+            <li><a class="donaciones" href="#">Donaciones</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
 
-    <button type="submit">Enviar</button>
-  </form>
+  </header>
+
+  <main>
+    <form action="https://formsubmit.co/orpi4488@gmail.com" method="POST">
+      <h2>Déjanos orar contigo💌</h2>
+      <p>Escribe tu oración, petición o agradecimiento. Cada palabra será recibida con respeto y fe, y compartida en
+        nuestro círculo de oración para elevar tus intenciones al cielo.</p>
+      <label for="nombre">Tu nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+  <footer>
+    <p>En maanos del arfarero todos los derechos reservados ©2025 </p>
+  </footer>
+
 
 
 </body>

@@ -1,3 +1,140 @@
+/* ----------------------------- RESET Y BASE ----------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+  
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; 
+}
+
+.content {
+  flex: 1;  /* Esto hace que el contenido ocupe el espacio disponible */
+}
+/* ----------------------------- HEADER ----------------------------- */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  gap: 10px;
+ /* Fija el encabezado en la parte superior */
+  top: 0;           /* Asegura que esté en la parte superior */
+  left: 0;          /* Alinea el encabezado a la izquierda */
+  width: 100%;      /* Asegura que el encabezado ocupe todo el ancho */
+  z-index: 1000;    /* Asegura que el encabezado esté por encima de otros elementos */
+  background-color: white;
+}
+
+.logo-header {
+  width: 45%;
+  display: grid;
+  place-items: initial;
+}
+
+.logo {
+  height: 100px;
+  max-width: 100%;
+}
+
+.botones-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  width: 45%;
+  flex-wrap: wrap;
+}
+
+/* Botones del header */
+.botones-header button {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.botones-header button:hover {
+  background-color: #948a8a;
+}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* ----------------------------- MENÚ HAMBURGUESA ----------------------------- */
+.div-icon {
+ display: none;
+  /* Ocultar el icono hamburguesa por defecto */
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 1000;
+  /* Asegurar que esté por encima de otros elementos */
+}
+
+.material-symbols-outlined {
+  font-size: 30px;
+  color: black;
+  
+}
+
+.section-hambuerguesa{
+  display: none;
+}
+
+.ul-hambuerguesa {
+  list-style-type: none;
+  gap: 1rem;
+  display: none;
+  /* Ocultar el menú por defecto */
+  padding: 20px;
+  background-color: #e4e4de;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  /* Asegurarse de que esté debajo del icono */
+  overflow-y: auto;
+}
+
+
+
+.ul-hambuerguesa li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 15px;
+  display: block;
+}
+
+/* Mostrar menú hamburguesa al hacer clic */
+.ul-hambuerguesa.active {
+  display: flex;
+  
+  /* Mostrar el menú cuando tiene la clase 'active' */
+}
+/*-----------------------------------------------------------------------------------------------*/
+
 form {
   max-width: 400px;
   margin: 50px auto;
@@ -17,8 +154,8 @@ input, textarea {
   font-size: 1em;
 }
 
-button {
-  background-color: #00a67e;
+form button {
+  background-color:#948a8a;
   color: white;
   border: none;
   padding: 10px;
@@ -27,6 +164,17 @@ button {
   font-weight: bold;
 }
 
-button:hover {
-  background-color: #008060;
+form button:hover {
+  background-color:#857b7b;
+}
+/*------------------------------------------------footer---------------------------------------------------*/
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height:80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
 }

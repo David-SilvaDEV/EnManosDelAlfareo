@@ -228,6 +228,14 @@ header {
   
   /* Mostrar el menú cuando tiene la clase 'active' */
 }
+/*------------------------------------------------footer---------------------------------------------------*/
+footer {
+
+  height:80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 
 /*----------------------------------------CARD OCULTA QR PAGO-------------------------------------------*/
 .overlay {
@@ -425,7 +433,7 @@ header {
     /* Recorta la imagen para cubrir todo el espacio */
     display: block;
   }
-
+  /*-------------------------------------------------------------------------------------*/
 
 
 }
